@@ -51,10 +51,8 @@ public class TeamTest {
     }
 
     @Test
-    public void team_string_test() {
-        Team t1 = new Team("test-team");
-        String expected = "Team(name=test-team, members=[])";
-        assertEquals(expected, t1.toString());
+    public void toString_returns_correct_string() {
+        assertEquals("Team(name=test-team, members=[])", team.toString());
     }
 
     @Test
